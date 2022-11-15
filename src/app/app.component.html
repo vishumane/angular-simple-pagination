@@ -1,0 +1,23 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<p>
+  Start editing to see some magic happen :)
+</p>
+<!-- <div *ngFor="let d of data | paginate: { itemsPerPage: 10, currentPage: p }" >
+  <p>"userId" = {{ d.userId }}</p>
+  <p>"id" = {{ d.id }}</p>
+  <p>"title" = {{ d.title }}</p>
+  <p>"completed" = {{ d.completed }}</p>
+  <hr>
+</div> -->
+<!-- <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls> -->
+
+<div *ngFor =" let d  of record ">
+  <li *ngIf='! d.length '>
+    <p>
+      userId :  {{d.userId}}
+      title: {{d.title}}
+    </p>
+  </li>
+
+
+</div>
